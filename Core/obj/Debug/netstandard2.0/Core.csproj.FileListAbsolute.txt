@@ -6,3 +6,4 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\Core\bin\Debug\netstandard2.0\Core.p
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Core\obj\Debug\netstandard2.0\Core.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Core\obj\Debug\netstandard2.0\Core.pdb
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache

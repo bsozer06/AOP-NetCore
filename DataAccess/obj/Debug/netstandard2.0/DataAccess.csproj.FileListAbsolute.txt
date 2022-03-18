@@ -11,3 +11,4 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\DataAccess\bin\Debug\netstandard2.0\
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache

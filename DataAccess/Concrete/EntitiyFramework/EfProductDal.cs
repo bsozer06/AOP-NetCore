@@ -5,6 +5,8 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntitiyFramework
 {
+    // Dependency injection işleminde IProductDal kullanılıyor.
+    // Bu sayede efProductDal kullanılabilir hale geliyor kalıtıldığı için.
     public class EfProductDal : EfEntityRepositoryBase<Product,NorthwindContext>, IProductDal
     {
 
