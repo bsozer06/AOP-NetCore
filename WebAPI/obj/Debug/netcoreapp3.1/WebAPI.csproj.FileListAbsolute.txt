@@ -41,3 +41,8 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAP
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
