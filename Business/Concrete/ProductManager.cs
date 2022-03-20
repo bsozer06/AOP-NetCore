@@ -1,8 +1,12 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +23,13 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
-
+        [ValidationAspect(typeof(ProductValidator), Priority = 1)]
         public IResult Add(Product product)
         {
+            #region 2. way to validaiton in aop
+            //ValidationTool.Validate(new ProductValidator(), product);
+            #endregion
+
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded); 
         }
