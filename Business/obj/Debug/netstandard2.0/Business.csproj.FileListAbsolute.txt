@@ -1,3 +1,7 @@
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\Business.deps.json
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\Business.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\Business.pdb
@@ -7,10 +11,6 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\En
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\DataAccess.pdb
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\Entities.pdb
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\bin\Debug\netstandard2.0\Core.pdb
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\Business\obj\Debug\netstandard2.0\Business.pdb

@@ -1,8 +1,7 @@
-﻿using Core.Utilities.IoC;
+﻿using Core.CrossCuttingConcerns.Caching;
+using Core.CrossCuttingConcerns.Caching.Microsoft;
+using Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Core.DependencyResolvers
 {
@@ -11,6 +10,9 @@ namespace Core.DependencyResolvers
         public void Load(IServiceCollection services)
         {
             services.AddMemoryCache();
+
+            // ileride redis 'e geicilirse MemoryCacheManager degistirilir.
+            services.AddSingleton<ICacheManager, MemoryCacheManager>();
         }
     }
 }
