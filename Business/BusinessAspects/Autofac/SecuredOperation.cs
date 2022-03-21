@@ -17,6 +17,7 @@ namespace Business.BusinessAspects.Autofac
         public SecuredOperation(string roles)
         {
             _roles = roles.Split(',');
+            // bu şekilde SecuredOperation web tabanlı olarak kısıtlanmasının onune gecildi !
             _httpContextAccessor = ServiceTool.ServiceProvider.GetService<IHttpContextAccessor>();
 
         }

@@ -3,6 +3,7 @@ using Core.CrossCuttingConcerns.Caching.Microsoft;
 using Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics;
 
 namespace Core.DependencyResolvers
 {
@@ -17,6 +18,8 @@ namespace Core.DependencyResolvers
 
             // business kısmında web temelli olarak user claim bilgilerine erismeyi saglamak icin !
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddSingleton<Stopwatch>();
         }
     }
 }
