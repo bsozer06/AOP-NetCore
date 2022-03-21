@@ -1,6 +1,7 @@
 ﻿using Core.CrossCuttingConcerns.Caching;
 using Core.CrossCuttingConcerns.Caching.Microsoft;
 using Core.Utilities.IoC;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Core.DependencyResolvers
@@ -13,6 +14,9 @@ namespace Core.DependencyResolvers
 
             // ileride redis 'e geicilirse MemoryCacheManager degistirilir.
             services.AddSingleton<ICacheManager, MemoryCacheManager>();
+
+            // business kısmında web temelli olarak user claim bilgilerine erismeyi saglamak icin !
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
     }
 }

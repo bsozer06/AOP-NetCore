@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
@@ -19,6 +20,7 @@ namespace Business.Concrete
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
+
 
         public ProductManager(IProductDal productDal)
         {
@@ -62,6 +64,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetList().ToList());
         }
 
+        [SecuredOperation("Product.List, Admin")]
         [CacheAspect(10)]
         public IDataResult<List<Product>> GetListByCategory(int categoryId)
         {

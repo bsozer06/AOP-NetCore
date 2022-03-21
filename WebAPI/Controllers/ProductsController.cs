@@ -22,9 +22,10 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
-        [Authorize(Roles = "Product.List")]
+        //[Authorize(Roles = "Product.List")]
         public IActionResult GetList()
         {
+            //User.ClaimRoles()
             var result = _productService.GetList();
 
             if (result.Success)
