@@ -1,3 +1,4 @@
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\log4net.config
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\appsettings.json
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -12,6 +13,7 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Autof
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\log4net.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -24,14 +26,17 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Micro
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Business.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Core.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\DataAccess.dll

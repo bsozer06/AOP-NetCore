@@ -29,6 +29,18 @@
           }
         }
       },
+      "Autofac.Extensions.DependencyInjection/4.4.0": {
+        "dependencies": {
+          "Autofac": "4.9.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
       "Autofac.Extras.DynamicProxy/4.5.0": {
         "dependencies": {
           "Autofac": "4.9.4",
@@ -70,6 +82,14 @@
           "lib/netstandard2.0/FluentValidation.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.5.0.0"
+          }
+        }
+      },
+      "log4net/2.0.0": {
+        "runtime": {
+          "lib/net40-full/log4net.dll": {
+            "assemblyVersion": "1.2.11.0",
+            "fileVersion": "1.2.11.0"
           }
         }
       },
@@ -584,6 +604,17 @@
           }
         }
       },
+      "System.Configuration.ConfigurationManager/4.4.0": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
       "System.Data.SqlClient/4.6.1": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.5.0",
@@ -1011,6 +1042,14 @@
           }
         }
       },
+      "System.Security.Cryptography.ProtectedData/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
       "System.Security.Principal.Windows/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
@@ -1170,6 +1209,7 @@
       },
       "Core/1.0.0": {
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "4.4.0",
           "Autofac.Extras.DynamicProxy": "4.5.0",
           "FluentValidation": "8.5.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -1177,7 +1217,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0",
-          "System.IdentityModel.Tokens.Jwt": "5.5.0"
+          "System.Configuration.ConfigurationManager": "4.4.0",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0",
+          "log4net": "2.0.0"
         },
         "runtime": {
           "Core.dll": {}
@@ -1217,6 +1259,13 @@
       "path": "autofac/4.9.4",
       "hashPath": "autofac.4.9.4.nupkg.sha512"
     },
+    "Autofac.Extensions.DependencyInjection/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkNVcEVTG+asY338sZQNbWQIoCrb13I6qOxBrVX7aStu7SGskDDyGT0TrqiJdfEB48GbCd04ZcNz86TdD4cIHg==",
+      "path": "autofac.extensions.dependencyinjection/4.4.0",
+      "hashPath": "autofac.extensions.dependencyinjection.4.4.0.nupkg.sha512"
+    },
     "Autofac.Extras.DynamicProxy/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1237,6 +1286,13 @@
       "sha512": "sha512-gH9TOcn/l4WEG+h17z9sOPUf8rYX2NKBZ4hQjdPQWLeSyGlUiTCVVv6Dmpg2573Wtl2u1y11YmmhUO31gcZkeQ==",
       "path": "fluentvalidation/8.5.0",
       "hashPath": "fluentvalidation.8.5.0.nupkg.sha512"
+    },
+    "log4net/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KPajjkU1rbF6uY2rnakbh36LB9z9FVcYlciyOi6C5SJ3AMNywxjCGxBTN/Hl5nQEinRLuWvHWPF8W7YHh9sONw==",
+      "path": "log4net/2.0.0",
+      "hashPath": "log4net.2.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http/2.2.2": {
       "type": "package",
@@ -1560,6 +1616,13 @@
       "path": "system.componentmodel.typeconverter/4.3.0",
       "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
     },
+    "System.Configuration.ConfigurationManager/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
+      "path": "system.configuration.configurationmanager/4.4.0",
+      "hashPath": "system.configuration.configurationmanager.4.4.0.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.6.1": {
       "type": "package",
       "serviceable": true,
@@ -1818,6 +1881,13 @@
       "sha512": "sha512-O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
+      "path": "system.security.cryptography.protecteddata/4.4.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
     },
     "System.Security.Principal.Windows/4.5.0": {
       "type": "package",
