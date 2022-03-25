@@ -19,6 +19,9 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Micro
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
@@ -48,8 +51,6 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Entit
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csprojAssemblyReference.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfoInputs.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfo.cs
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
-D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.RazorTargetAssemblyInfo.cache
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
@@ -57,3 +58,18 @@ D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\stati
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\MicroKnights.Log4NetAdoNetAppender.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
+D:\burhan\Codes\2022\Udemy\NorthwindBackend\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache

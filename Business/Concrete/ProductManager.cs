@@ -3,6 +3,7 @@ using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Exception;
 using Core.Aspects.Autofac.Logging;
 using Core.Aspects.Autofac.Performance;
 using Core.Aspects.Autofac.Transaction;

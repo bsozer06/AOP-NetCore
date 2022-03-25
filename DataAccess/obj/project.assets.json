@@ -71,13 +71,17 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "log4net/1.2.10": {
+      "log4net/2.0.10": {
         "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.Reflection": "4.3.0"
+        },
         "compile": {
-          "lib/2.0/log4net.dll": {}
+          "lib/netstandard2.0/log4net.dll": {}
         },
         "runtime": {
-          "lib/2.0/log4net.dll": {}
+          "lib/netstandard2.0/log4net.dll": {}
         }
       },
       "Microsoft.AspNetCore.Http/2.2.2": {
@@ -245,10 +249,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration/2.2.0": {
+      "Microsoft.Extensions.Configuration/3.1.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.23"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
@@ -257,10 +261,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
+          "Microsoft.Extensions.Primitives": "3.1.23"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -349,11 +353,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/2.2.0": {
+      "Microsoft.Extensions.Primitives/3.1.23": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -701,10 +705,11 @@
           "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/4.4.0": {
+      "System.Configuration.ConfigurationManager/4.5.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.4.0"
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Security.Permissions": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -986,15 +991,15 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.1": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "dependencies": {
           "System.Buffers": "4.4.0",
           "System.Numerics.Vectors": "4.4.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
@@ -1003,7 +1008,7 @@
       "System.Numerics.Vectors/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Numerics.Vectors.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
@@ -1142,7 +1147,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -1237,7 +1242,7 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -1264,8 +1269,11 @@
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "System.Security.Cryptography.ProtectedData/4.5.0": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.0"
+        },
         "compile": {
           "ref/netstandard2.0/_._": {}
         },
@@ -1279,10 +1287,22 @@
           }
         }
       },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+        }
+      },
       "System.Security.Principal.Windows/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -1479,11 +1499,10 @@
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
-          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.Configuration": "3.1.23",
           "Microsoft.IdentityModel.Tokens": "5.5.0",
-          "System.Configuration.ConfigurationManager": "4.4.0",
           "System.IdentityModel.Tokens.Jwt": "5.5.0",
-          "log4net": "1.2.10"
+          "log4net": "2.0.10"
         },
         "compile": {
           "bin/placeholder/Core.dll": {}
@@ -1606,21 +1625,32 @@
         "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
-    "log4net/1.2.10": {
-      "sha512": "yP7PCpxPt5cB9yiRAvCwyW5YRqXV4jM4tpVLnm/ls2nJt786l5srbSdm5xIEVMXz/kOYqLKP177Gyqey1wdP/A==",
+    "log4net/2.0.10": {
+      "sha512": "8vkOZKJnTxzUiZIsOnMK//V/J659UMr+oBO6shd34zvTGPzeL7en/IJLa9hK//Ur1It+n0N1JMlri2mvk4vaDw==",
       "type": "package",
-      "path": "log4net/1.2.10",
+      "path": "log4net/2.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/1.0/log4net.dll",
-        "lib/1.0/log4net.xml",
-        "lib/1.1/log4net.dll",
-        "lib/1.1/log4net.xml",
-        "lib/2.0/log4net.dll",
-        "lib/2.0/log4net.xml",
-        "log4net.1.2.10.nupkg.sha512",
-        "log4net.nuspec"
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.10.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Microsoft.AspNetCore.Http/2.2.2": {
@@ -1823,29 +1853,35 @@
         "microsoft.extensions.caching.memory.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration/2.2.0": {
-      "sha512": "Be1LEgclOQthHN7tksm79bGbXNJ0yuewEBiIzPSePwDwt2AGqLLx5iXv6BfjVZGztxKQCngz+X8IRw/kOz+CwA==",
+    "Microsoft.Extensions.Configuration/3.1.23": {
+      "sha512": "dSwOHfXimkWKpkzD+FpAJ0RZB4++bg1eyPyY2/RrkhzuN7QXrfP1y2ZN+6msoYZETkzZqvrIJ195xlzWSWg7IA==",
       "type": "package",
-      "path": "microsoft.extensions.configuration/2.2.0",
+      "path": "microsoft.extensions.configuration/3.1.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.3.1.23.nupkg.sha512",
         "microsoft.extensions.configuration.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
-      "sha512": "HT/cMUOHvJ29Z5VIlWp6Zd1F63k5CbpGisNk8ayP35GwKwX5IDsJL8hWMoBesz5WPK8ZfW4f47kyVAhfCD/PAw==",
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.23": {
+      "sha512": "kab/2n5NZ+65ECGG5W8cKUaKTS4HzLLR/g7FJnGPoBLNI8Byd0hgok4IXcLMiHwQjCPSldDTQFQFJvxiC6eR3Q==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.3.1.23.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec"
       ]
     },
@@ -1944,16 +1980,19 @@
         "microsoft.extensions.options.nuspec"
       ]
     },
-    "Microsoft.Extensions.Primitives/2.2.0": {
-      "sha512": "Sv8EDHvN2852bE5G1yosKCa7sUw/x0Z/rCaI5LIWHseAXprG1h9oberAh3NRBO7w2zTZq79WPeQDMsPBVSf99w==",
+    "Microsoft.Extensions.Primitives/3.1.23": {
+      "sha512": "ZBajOupIGUg86k96iEoU2MG+y1QHExKGISmdZl+YBKtFxgEUYdC2V8kEWmM0cdHFmLtt9JH39muYPqTGwkVu2A==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/2.2.0",
+      "path": "microsoft.extensions.primitives/3.1.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+        "microsoft.extensions.primitives.3.1.23.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
       ]
     },
@@ -2784,10 +2823,10 @@
         "system.componentmodel.typeconverter.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.4.0": {
-      "sha512": "gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
+    "System.Configuration.ConfigurationManager/4.5.0": {
+      "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.4.0",
+      "path": "system.configuration.configurationmanager/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2799,7 +2838,7 @@
         "ref/net461/System.Configuration.ConfigurationManager.xml",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+        "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3654,10 +3693,10 @@
         "system.linq.queryable.nuspec"
       ]
     },
-    "System.Memory/4.5.1": {
-      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+    "System.Memory/4.5.2": {
+      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
       "type": "package",
-      "path": "system.memory/4.5.1",
+      "path": "system.memory/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3669,11 +3708,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "ref/netstandard1.1/System.Memory.dll",
-        "ref/netstandard1.1/System.Memory.xml",
-        "ref/netstandard2.0/System.Memory.dll",
-        "ref/netstandard2.0/System.Memory.xml",
-        "system.memory.4.5.1.nupkg.sha512",
+        "system.memory.4.5.2.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4306,26 +4341,31 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4801,10 +4841,10 @@
         "version.txt"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.4.0": {
-      "sha512": "cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
+    "System.Security.Cryptography.ProtectedData/4.5.0": {
+      "sha512": "wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.4.0",
+      "path": "system.security.cryptography.protecteddata/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4836,8 +4876,29 @@
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/4.5.0": {
+      "sha512": "O+e9qamSTJ4YOJCpnLgsf9FTGfsxJv2On1OdYkhmd/XA5AYRvUatkz7Rp3dS9XR7rhVuklnjST1dRoMK7N4cGw==",
+      "type": "package",
+      "path": "system.security.permissions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.xml",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.4.5.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -5597,17 +5658,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'log4net 1.2.10' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "log4net",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
