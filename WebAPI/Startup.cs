@@ -34,6 +34,7 @@ namespace WebAPI
         {
             services.AddControllers();
 
+           
             #region Cors
             services.AddCors(options =>
             {
@@ -74,6 +75,10 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            #region Middleware Exceptions
+            app.ConfigureCustomExceptionMiddleware();
+            #endregion
 
             #region Cors
             app.UseCors(builder => builder.WithOrigins("http://localhost:3000", "http://localhost:4200").AllowAnyHeader());

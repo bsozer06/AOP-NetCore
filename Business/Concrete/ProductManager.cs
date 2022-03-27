@@ -10,6 +10,7 @@ using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -25,11 +26,14 @@ namespace Business.Concrete
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
+        // başka servisi kullanacaksan onun dal 'ını cagirma , direk onun servisini cagir !!!
+        private ICategoryService _categoryService;
 
 
-        public ProductManager(IProductDal productDal)
+        public ProductManager(IProductDal productDal, ICategoryService categoryService)
         {
             _productDal = productDal;
+            _categoryService = categoryService;
         }
 
         [ValidationAspect(typeof(ProductValidator), Priority = 1)]
@@ -40,9 +44,43 @@ namespace Business.Concrete
             //ValidationTool.Validate(new ProductValidator(), product);
             #endregion
 
+            IResult result = BusinessRules.Run
+                (
+                    CheckIfProductNameExists(product.ProductName),
+                    CheckIfCategoryIsEnabled()
+                );
+
+            if (result != null)
+            {
+                return result; 
+            }
+
             _productDal.Add(product);
+
             return new SuccessResult(Messages.ProductAdded); 
         }
+
+        private IResult CheckIfProductNameExists(string productName)
+        {
+            var result = _productDal.GetList(p => p.ProductName == productName).Any();
+
+            if (result)
+            {
+                return new ErrorResult(Messages.ProductNameAlreadyExists);
+            }
+
+            return new SuccessResult();
+        }
+        private IResult CheckIfCategoryIsEnabled()
+        {
+            var result = _categoryService.GetList();
+            if (result.Data.Count < 10)
+            {
+                return new ErrorResult(Messages.ProductNameAlreadyExists);
+            }
+            return new SuccessResult();
+        }
+
 
         [TransactionScopeAspect]
         public IResult Update(Product product)
